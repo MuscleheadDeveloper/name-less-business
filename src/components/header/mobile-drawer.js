@@ -20,10 +20,6 @@ const socials = [
     path: '/',
     icon: <FaGithubAlt />,
   },
-  {
-    path: '/',
-    icon: <FaDribbble />,
-  },
 ];
 
 export default function MobileDrawer() {

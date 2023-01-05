@@ -8,7 +8,7 @@ export default function PriceCard({
     name,
     description,
     priceWithUnit,
-    buttonText = 'Start Free Trial',
+    buttonText = 'Free Trial',
     anotherOption,
     points,
   },
