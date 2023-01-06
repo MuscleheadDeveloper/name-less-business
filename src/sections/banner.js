@@ -11,13 +11,13 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products to Explore
+            End-to-End Custom Software Solutions
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Check out our website to find great software products and deals!
-            If you need a website or a web application this is the place to go!
+            Leveraging modern approaches to web development, we bring front-end, back-end, and architecture
+             together to meet your business needs.
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Button variant="primary">Contact Us</Button>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />

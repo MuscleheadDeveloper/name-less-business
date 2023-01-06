@@ -12,34 +12,30 @@ const datas = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
-    text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+    altText: "Web Development",
+    title: "Web Development",
+    text: "Own a space on the internet and Transform Your Business Through Technology.",
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
-    text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+    altText: "Web Design",
+    title: "Web Design",
+    text: "Elevate Your User Experience. We design custom solutions with your end user in mind.",
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
-    text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+    altText: "SEO & Digital Marketing",
+    title: "SEO & Digital Marketing",
+    text: "Harness the power of the Internet to Boost Product and Sales.",
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
-    text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+    altText: "Customer Support",
+    title: "Customer Support",
+    text: "We are attentive to your needs, providing solutions to your business probelms.",
   },
 ];
 
@@ -48,8 +44,8 @@ export default function Feature() {
    <section sx={{ variant: 'section.feature'}}>
      <Container>
        <SectionHeader 
-        slogan="Quality Features"
-        title="Amazing useful features"
+        slogan="Our Services"
+        title="We're the Whole Package"
       />
       <Grid sx={styles.grid}>
         {datas.map((data, index) => (

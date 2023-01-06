@@ -10,27 +10,23 @@ import ArrowEven from 'assets/arrowEven.svg';
 const datas = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: "Problem Identification",
+    text: "While some needs can be met with off-the-shelf products, others require a custom software solution built from the ground up. Regardless of which method works for your business, it needs to not only fit your needs but adapt to them as you grow.",
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: "Profer Solution",
+    text: "We build applications that work for your business and your users. Whether it’s a complex enterprise platform, a responsive web app, or a marketing site, our web solutions function smoothly and deliver a consistent experience to users across all platforms.",
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: "Search Engine Optimization",
+    text: "Distributing content is only half the battle. The other half is ensuring people can find it. Optimizing it for search engines does exactly that.  Sites must be crawled and indexed efficiently, which requires a balance of search engine knowledge, technical expertise, and a human-centered approach to content strategy.",
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: "Customer Satisfaction and Support",
+    text: "Software is never truly finished. No matter how solid your released product is, changes are inevitable. So are patch releases, language and platform updates, and new enhancements. Our software support team keeps your product secure, maintained, and enhanced well after it launches.",
   },
 ];
 
