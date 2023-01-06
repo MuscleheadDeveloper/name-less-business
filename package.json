@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "next build && next export",
-    "postbuild": "next-sitemap"
+    "build": "next build"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
@@ -35,5 +34,8 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
     "next-sitemap": "^1.2.4"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
