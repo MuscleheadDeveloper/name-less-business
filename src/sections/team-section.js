@@ -16,35 +16,8 @@ const datas = [
   {
     id: 1,
     imgSrc: Member1,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
-  {
-    id: 2,
-    imgSrc: Member2,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Agubata Sylvester',
+    title: 'Agubata Sylvester',
     designation: 'Founder',
     socialProfile: [
       {
@@ -59,12 +32,28 @@ const datas = [
         path: '#',
         icon: <FaTwitter />,
       },
+    ],
+  },
+  {
+    id: 2,
+    imgSrc: Member2,
+    altText: 'Njoku Obinna',
+    title: 'Njoku Obinna',
+    designation: 'Founder',
+    socialProfile: [
       {
-        id: 3,
-        name: 'instagram',
+        id: 1,
+        name: 'facebook',
         path: '#',
-        icon: <FaInstagram />,
+        icon: <FaFacebookF />,
       },
+      {
+        id: 2,
+        name: 'twitter',
+        path: '#',
+        icon: <FaTwitter />,
+      },
+   
     ],
   },
   {
@@ -86,12 +75,7 @@ const datas = [
         path: '#',
         icon: <FaTwitter />,
       },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+ 
     ],
   },
   {
@@ -112,66 +96,6 @@ const datas = [
         name: 'twitter',
         path: '#',
         icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
-  {
-    id: 5,
-    imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
-  {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
       },
     ],
   },

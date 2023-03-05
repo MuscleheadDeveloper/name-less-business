@@ -12,7 +12,7 @@ import {
 } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import TextFeature from "components/text-feature";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 import { IoIosPlay } from "react-icons/io";
 
 import ServiceThumb from "assets/service-thumb.png";
@@ -43,7 +43,7 @@ const datas = {
 };
 
 export default function ServiceSection() {
-  const [videoOpen, setVideoOpen] = useState(false);
+  // const [videoOpen, setVideoOpen] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -83,12 +83,12 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="iGBERMGMIvc"
         onClose={() => setVideoOpen(false)}
-      />
+      /> */}
     </section>
   );
 }
