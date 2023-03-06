@@ -3,14 +3,12 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import Member1 from 'assets/team/member-1.png';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
-import Member5 from 'assets/team/member-5.png';
-import Member6 from 'assets/team/member-6.png';
 
 const datas = [
   {
@@ -22,9 +20,9 @@ const datas = [
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
+        name: 'linkedin',
         path: '#',
-        icon: <FaFacebookF />,
+        icon: <FaLinkedin />,
       },
       {
         id: 2,
@@ -133,8 +131,6 @@ const styles = {
       'repeat(2,1fr)',
       null,
       'repeat(2,1fr)',
-      null,
-      'repeat(3,1fr)',
     ],
   },
 };

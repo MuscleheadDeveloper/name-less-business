@@ -1,11 +1,22 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import { jsx } from "theme-ui";
+import Lottie from "react-lottie";
+import animation from "../launch.json";
+import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
+import BannerImg from "assets/banner-thumb.png";
+import ShapeLeft from "assets/shape-left.png";
+import ShapeRight from "assets/shape-right.png";
 
 export default function Banner() {
+  const defaultOptions = {
+    loop: true,
+    autoPlay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
@@ -14,13 +25,14 @@ export default function Banner() {
             End-to-End Custom Software Solutions
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Leveraging modern approaches to web development, we bring front-end, back-end, and architecture
-             together to meet your business needs.
+            Leveraging modern approaches to web development, we bring front-end,
+            back-end, and architecture together to meet your business needs.
           </Text>
           <Button variant="primary">Contact Us</Button>
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
+          <Lottie options={defaultOptions} />
+          {/* <Image src={BannerImg} alt="banner" /> */}
         </Box>
       </Container>
     </section>
@@ -29,56 +41,56 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
+    pt: ["140px", "145px", "155px", "170px", null, null, "180px", "215px"],
     pb: [2, null, 0, null, 2, 0, null, 5],
-    position: 'relative',
+    position: "relative",
     zIndex: 2,
-    '&::before': {
-      position: 'absolute',
+    "&::before": {
+      position: "absolute",
       content: '""',
       bottom: 6,
       left: 0,
-      height: '100%',
-      width: '100%',
+      height: "100%",
+      width: "100%",
       zIndex: -1,
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom left',
-      backgroundSize: '36%',
+      backgroundPosition: "bottom left",
+      backgroundSize: "36%",
     },
-    '&::after': {
-      position: 'absolute',
+    "&::after": {
+      position: "absolute",
       content: '""',
-      bottom: '40px',
+      bottom: "40px",
       right: 0,
-      height: '100%',
-      width: '100%',
+      height: "100%",
+      width: "100%",
       zIndex: -1,
       backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom right',
-      backgroundSize: '32%',
+      backgroundPosition: "bottom right",
+      backgroundSize: "32%",
     },
     container: {
-      minHeight: 'inherit',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
+      minHeight: "inherit",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
     },
     contentBox: {
-      width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
-      mx: 'auto',
-      textAlign: 'center',
-      mb: ['40px', null, null, null, null, 7],
+      width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
+      mx: "auto",
+      textAlign: "center",
+      mb: ["40px", null, null, null, null, 7],
     },
     imageBox: {
-      justifyContent: 'center',
-      textAlign: 'center',
-      display: 'inline-flex',
-      mb: [0, null, -6, null, null, '-40px', null, -3],
+      justifyContent: "center",
+      textAlign: "center",
+      display: "inline-flex",
+      mb: [0, null, -6, null, null, "-40px", null, -3],
       img: {
-        position: 'relative',
-        height: [245, 'auto'],
+        position: "relative",
+        height: [245, "auto"],
       },
     },
   },
