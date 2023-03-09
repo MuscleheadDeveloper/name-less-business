@@ -13,6 +13,8 @@ import {
 import { keyframes } from "@emotion/core";
 import TextFeature from "components/text-feature";
 // import ModalVideo from "react-modal-video";
+import Lottie from "react-lottie";
+import animation from "../animate.json";
 import { IoIosPlay } from "react-icons/io";
 
 import ServiceThumb from "assets/service-thumb.png";
@@ -50,11 +52,20 @@ export default function ServiceSection() {
     setVideoOpen(true);
   };
 
+    const defaultOptions = {
+      loop: true,
+      autoPlay: true,
+      animationData: animation,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    };
+
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="thumbnail" />
+          <Lottie options={defaultOptions} />
           <Button
             sx={styles.videoBtn}
             onClick={handleClick}

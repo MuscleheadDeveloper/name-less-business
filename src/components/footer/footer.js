@@ -10,10 +10,10 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            {/* <Image src={FooterLogo} alt="Logo" /> */}
-            <Text sx={styles.footer.link}>
+            <Image src={FooterLogo} alt="Logo" />
+            {/* <Text sx={styles.footer.link}>
              Nameless Business Logo
-            </Text>
+            </Text> */}
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -29,7 +29,7 @@ export default function Footer() {
           </Box>
           <Text sx={styles.footer.copyright}>
             &copy;Copyright by {new Date().getFullYear()}{" "}
-            <a href="https://kentrung256.blogspot.com/">Nameless Business</a>
+            <a class={styles.footer.link} href="mailto:njokua04@gmail.com">O.C Digital web services</a>
           </Text>
         </Box>
       </Container>

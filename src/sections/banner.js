@@ -2,8 +2,7 @@
 import { jsx } from "theme-ui";
 import Lottie from "react-lottie";
 import animation from "../launch.json";
-import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
-import BannerImg from "assets/banner-thumb.png";
+import { Container, Box, Heading, Text, Button } from "theme-ui";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 
@@ -32,7 +31,6 @@ export default function Banner() {
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Lottie options={defaultOptions} />
-          {/* <Image src={BannerImg} alt="banner" /> */}
         </Box>
       </Container>
     </section>
