@@ -99,7 +99,7 @@ const datas = [
 
 export default function TeamSection() {
   return (
-    <section>
+    <section id='teams'>
       <Container>
         <SectionHeader
           slogan="our team"

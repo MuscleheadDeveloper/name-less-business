@@ -25,9 +25,9 @@ export default function Banner() {
           </Heading>
           <Text as="p" variant="heroSecondary">
             Leveraging modern approaches to web development, we bring front-end,
-            back-end, and architecture together to meet your business needs.
+            back-end, and architecture <span className="text-red-600"> hello bitxh</span>together to meet your business needs.
           </Text>
-          <Button variant="primary">Contact Us</Button>
+          <Button variant="primary" onClick="/contact" >Contact Us</Button>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Lottie options={defaultOptions} />

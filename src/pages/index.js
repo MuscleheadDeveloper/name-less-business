@@ -10,7 +10,8 @@ import ServiceSection from '../sections/service-section';
 import Feature from '../sections/feature';
 import CoreFeature from '../sections/core-feature';
 import WorkFlow from '../sections/workflow';
-import TeamSection from '../sections/team-section';
+import TeamSection from '../sections/team';
+import ContactUs from 'sections/contact';
 
 export default function IndexPage() {
   return (
@@ -24,6 +25,7 @@ export default function IndexPage() {
         <CoreFeature />
         <WorkFlow />
         <TeamSection />
+        <ContactUs />
       </Layout>
     </ThemeProvider>
   );

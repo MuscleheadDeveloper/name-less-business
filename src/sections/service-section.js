@@ -62,7 +62,7 @@ export default function ServiceSection() {
     };
 
   return (
-    <section sx={{ variant: "section.services" }}>
+    <section sx={{ variant: "section.services" }} id='services'>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Lottie options={defaultOptions} />

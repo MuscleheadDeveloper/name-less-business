@@ -1,40 +1,26 @@
 /** @jsx jsx */
 import { jsx, Container, Box, Image } from "theme-ui";
-import TextFeature from "components/text-feature";
-import FeatureThumb from "assets/core-feature.png";
+import SectionHeader from "components/section-header";
 import shapePattern from "assets/shape-pattern2.png";
 import Lottie from "react-lottie";
-import animation from "../anim.json";
+import animation from "../contact.json";
+import Form from "components/form";
 
-const data = {
-  subTitle: "Distinctly Designed. Brilliantly Built",
-  title: "Building Ideas Together",
-  description:
-    "Everyone working on your project is fully invested in its success. We care just as much about how your software looks and performs as we do about the problem that it’s solving. We work, learn, and celebrate together, measuring success by the duration of our long-term partnerships.",
-  btnName: "Contact Us",
-  btnURL: "#contact",
-};
-const defaultOptions = {
-  loop: true,
-  autoPlay: true,
-  animationData: animation,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
-export default function CoreFeature() {
+export default function ContactUs() {
+  const defaultOptions = {
+    loop: true,
+    autoPlay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
-    <section sx={{ variant: "section.coreFeature" }}>
+    <section id="contact">
+      <SectionHeader slogan="Contact us" title="just to chat" />
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
-          <TextFeature
-            subTitle={data.subTitle}
-            title={data.title}
-            description={data.description}
-            btnName={data.btnName}
-            btnURL={data.btnURL}
-          />
+          <Form />
         </Box>
         <Box sx={styles.thumbnail}>
           <Lottie options={defaultOptions} />

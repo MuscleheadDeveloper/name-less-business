@@ -116,7 +116,7 @@ export default {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    mt: ["3px", null, -1],
+    mt: ["30px"],
     marginBottom: ["50px", null, "60px", null, null, "65px", null, "80px"],
     mx: "auto",
     title: {
